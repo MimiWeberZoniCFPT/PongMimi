@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "0/v/vCTeAZawNwR31liep5cdZa4F9g2SCp6PBiBCWUjCTgpiRnLOhTtMbSZrTfW0PzNC4E06W43t7Qgbnve9Jw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jamie.wbr\\Desktop\\Vendredi\\3eme\\APROG\\PongMimi\\PongMimi\\PongMimi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jamie.wbr\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\Jamie.wbr\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+  ],
+  "logs": []
+}

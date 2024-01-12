@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/Jamie.wbr/Desktop/Vendredi/3eme/APROG/PongMimi/PongMimi/Content/File.spritefont","C:/Users/Jamie.wbr/Desktop/Vendredi/3eme/APROG/PongMimi/PongMimi/Content/bin/DesktopGL/Content/score.xnb","FontDescriptionProcessor","SpriteFontContent",2068,136223,0.3056376
+"C:/Users/Jamie.wbr/Desktop/Vendredi/3eme/APROG/PongMimi/PongMimi/Content/pellet.png","C:/Users/Jamie.wbr/Desktop/Vendredi/3eme/APROG/PongMimi/PongMimi/Content/bin/DesktopGL/Content/pellet.xnb","TextureProcessor","Texture2DContent",181,485,0.1601973
+"C:/Users/Jamie.wbr/Desktop/Vendredi/3eme/APROG/PongMimi/PongMimi/Content/racket.png","C:/Users/Jamie.wbr/Desktop/Vendredi/3eme/APROG/PongMimi/PongMimi/Content/bin/DesktopGL/Content/racket.xnb","TextureProcessor","Texture2DContent",166,1585,0.1654993
