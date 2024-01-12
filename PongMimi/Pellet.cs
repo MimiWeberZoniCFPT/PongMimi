@@ -73,7 +73,7 @@ namespace PongMimi
         /// Check if there is a collision with a given racket
         /// </summary>
         /// <param name="racket">The racket to check collision with</param>
-        public void CheckCollision(Racket racket)
+        public bool CheckCollision(Racket racket)
         {
             float[] edges = new float[]
             {
@@ -98,7 +98,9 @@ namespace PongMimi
                 this.speed += 10;
                 float directionY = this.Position.Y - racket.Position.Y;
                 this.direction.Y = directionY / Math.Abs(directionY);
+                return true;
             }
+            return false;
         }
 
         /// <summary>

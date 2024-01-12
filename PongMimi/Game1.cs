@@ -125,11 +125,11 @@ namespace PongMimi
             float directionXpellet = pellet.Direction.X;
             if (posXpellet < 100 && directionXpellet == -1)
             {
-                pellet.CheckCollision(player1);
+                if (pellet.CheckCollision(player1)) pellet.Color = Color.Aqua;
             }
             if (posXpellet > 540 && directionXpellet == 1)
             {
-                pellet.CheckCollision(player2);
+                if (pellet.CheckCollision(player2)) pellet.Color = Color.Pink;
             }
             switch (pellet.CheckWin(limits))
             {
