@@ -20,6 +20,13 @@
 /processorParam:TextureFormat=Compressed
 /build:File.spritefont;score.spritefont
 
+#begin frame.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:frame.spritefont
+
 #begin pellet.png
 /importer:TextureImporter
 /processor:TextureProcessor

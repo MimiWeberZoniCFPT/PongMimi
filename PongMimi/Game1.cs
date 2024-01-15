@@ -34,7 +34,12 @@ namespace PongMimi
         /// <summary>
         /// The font used for showing the score
         /// </summary>
-        private SpriteFont font;
+        private SpriteFont scoreFont;
+
+        /// <summary>
+        /// The font used for showing the framerate
+        /// </summary>
+        private SpriteFont frameFont;
 
         /// <summary>
         /// The limits of the playfield
@@ -132,7 +137,14 @@ namespace PongMimi
             pellet = new Pellet(new Vector2(320, 240), textures[1]);
             limits = new Vector2(640, 480);
             scores = new int[] { 0, 0 };
-            font = Content.Load<SpriteFont>("score");
+            scoreFont = Content.Load<SpriteFont>("score");
+            frameFont = Content.Load<SpriteFont>("frame");
+            timeCom = 0;
+            timeGra = 0;
+            frameCom = 0;
+            frameGra = 0;
+            fpsCom = 0;
+            fpsGra = 0;
         }
 
         /// <summary>
@@ -202,8 +214,14 @@ namespace PongMimi
             // Draw pellets
             this.DrawObject(pellet);
             // Draw score
-            float stringLength = font.MeasureString($"{scores[0]}  -  {scores[1]}").X;
-            _spriteBatch.DrawString(font, $"{scores[0]}  -  {scores[1]}", new Vector2(320 - stringLength / 2, 30), Color.White);
+            float stringLength = scoreFont.MeasureString($"{scores[0]}  -  {scores[1]}").X;
+            _spriteBatch.DrawString(scoreFont, $"{scores[0]}  -  {scores[1]}", new Vector2(320 - stringLength / 2, 30), Color.White);
+            // Draw framerates
+            float frameLength1 = frameFont.MeasureString($"{fpsCom}").X;
+            float frameLength2 = frameFont.MeasureString($"{fpsCom} / ").X;
+            _spriteBatch.DrawString(frameFont, $"{fpsCom}", new Vector2(10, 10), Color.Aqua);
+            _spriteBatch.DrawString(frameFont, " / ", new Vector2(10 + frameLength1, 10), Color.White);
+            _spriteBatch.DrawString(frameFont, $"{fpsGra}", new Vector2(10 + frameLength2, 10), Color.Pink);
             _spriteBatch.End();
 
             // calculate FPS
