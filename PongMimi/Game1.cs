@@ -62,6 +62,36 @@ namespace PongMimi
         private int[] scores;
 
         /// <summary>
+        /// The time to count for the framerate count of the computing part
+        /// </summary>
+        private float timeCom;
+
+        /// <summary>
+        /// The time to count for the framerate count of the graphics part
+        /// </summary>
+        private float timeGra;
+
+        /// <summary>
+        /// The frames since the last second for the computing part
+        /// </summary>
+        private float frameCom;
+
+        /// <summary>
+        /// The frames since the last second for the graphics part
+        /// </summary>
+        private float frameGra;
+
+        /// <summary>
+        /// The FPS of the computing part
+        /// </summary>
+        private float fpsCom;
+
+        /// <summary>
+        /// The FPS of the graphics part
+        /// </summary>
+        private float fpsGra;
+
+        /// <summary>
         /// The constructor of the class
         /// </summary>
         public Game1()

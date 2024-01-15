@@ -107,11 +107,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jamie.wbr\\Desktop\\Vendredi\\3eme\\APROG\\PongMimi\\PongMimi\\PongMimi.csproj",
+      "projectUniqueName": "C:\\Users\\Jamie.wbr\\Desktop\\Vendredi\\3eme\\APROG\\s1\\PongMimi\\PongMimi\\PongMimi.csproj",
       "projectName": "PongMimi",
-      "projectPath": "C:\\Users\\Jamie.wbr\\Desktop\\Vendredi\\3eme\\APROG\\PongMimi\\PongMimi\\PongMimi.csproj",
+      "projectPath": "C:\\Users\\Jamie.wbr\\Desktop\\Vendredi\\3eme\\APROG\\s1\\PongMimi\\PongMimi\\PongMimi.csproj",
       "packagesPath": "C:\\Users\\Jamie.wbr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jamie.wbr\\Desktop\\Vendredi\\3eme\\APROG\\PongMimi\\PongMimi\\obj\\",
+      "outputPath": "C:\\Users\\Jamie.wbr\\Desktop\\Vendredi\\3eme\\APROG\\s1\\PongMimi\\PongMimi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jamie.wbr\\AppData\\Roaming\\NuGet\\NuGet.Config",
