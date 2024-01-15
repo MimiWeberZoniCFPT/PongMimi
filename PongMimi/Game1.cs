@@ -173,6 +173,16 @@ namespace PongMimi
                     break;
             }
 
+            // calculate FPS
+            frameCom++;
+            timeCom += elapsedTime;
+            if (timeCom >= 1)
+            {
+                fpsCom = frameCom;
+                frameCom = 0;
+                timeCom = 0;
+            }
+
             base.Update(gameTime);
         }
 
@@ -183,7 +193,8 @@ namespace PongMimi
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Black);
-
+            // get elapsed time in seconds
+            float elapsedTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
             _spriteBatch.Begin();
             // Draw rackets
             this.DrawObject(player1);
@@ -194,6 +205,16 @@ namespace PongMimi
             float stringLength = font.MeasureString($"{scores[0]}  -  {scores[1]}").X;
             _spriteBatch.DrawString(font, $"{scores[0]}  -  {scores[1]}", new Vector2(320 - stringLength / 2, 30), Color.White);
             _spriteBatch.End();
+
+            // calculate FPS
+            frameGra++;
+            timeGra += elapsedTime;
+            if (timeGra >= 1)
+            {
+                fpsGra = frameGra;
+                frameGra = 0;
+                timeGra = 0;
+            }
 
             base.Draw(gameTime);
         }
